@@ -1,16 +1,15 @@
 {
   "compilerOptions": {
-    "module": "NodeNext",
-    "target": "ES2022",
-    "moduleResolution": "nodenext",
-    "esModuleInterop": true,
-    "strict": true,
-    "resolveJsonModule": true,
-    "skipLibCheck": true,
+    "target": "ES2020",
+    "module": "Node16",
+    "moduleResolution": "node16", // add this line
     "outDir": "./dist",
     "rootDir": "./src",
-    "lib": ["ES2022", "DOM"],
-    "types": ["node"]
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
   },
-  "include": ["src"]
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
 }
